@@ -7,6 +7,6 @@ spec:
   - name: nginx
     image: nginxhdbgnb 
     # ImagePullbackoff(image wrong echinapudu)
-  # - name: almalinux
-  #   image: almalinux:9
+  - name: almalinux
+    image: almalinux:9
   #   # container lo no run command so it will thrown an error
