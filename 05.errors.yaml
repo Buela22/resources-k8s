@@ -1,0 +1,12 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: error-test
+spec:
+  containers:
+  - name: nginx
+    image: nginxhdbgnb 
+    # ImagePullbackoff
+  - name: almalinux
+    image: almalinux:9
+    # container lo no run command so it will thrown an error

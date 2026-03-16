@@ -1,0 +1,25 @@
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  # these are replica set lables
+  labels:
+    purpose: dp-demo
+    project: roboshop
+spec:
+  replicas: 4
+  selector:
+  # these lables are used to select pods
+    matchLabels:
+      purpose: dp-demo
+      project: roboshop
+      #pod definition
+  template:
+    metadata:
+      lables:
+        purpose: dp-demo
+        project: roboshop
+    specc:
+      containers:
+      - name: nginx
+        image: nginx:latest
