@@ -1,5 +1,5 @@
-apiversion: v1
-kind: pod
+apiVersion: v1
+kind: Pod
 metadata:
   name: resources-demo
 spec: 
@@ -8,7 +8,7 @@ spec:
      image: nginx
      resources:
       requests:
-        memory: "68Mi"
+        memory: "68Mi" # mi = mb
         cpu: "100m" # 1/10th of cpu
       limits:
         memory: "100Mi"
