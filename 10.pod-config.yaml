@@ -1,7 +1,7 @@
-apiversion: v1
-kind: pod
+apiVersion: v1
+kind: Pod
 metadata:
-  name: config-map-demo
+  name: ConfigMap-demo
 spec:
   containers: 
     - name: nginx
