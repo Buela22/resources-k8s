@@ -1,5 +1,5 @@
-apiversion: v1
-kind: pod
+apiVersion: v1
+kind: Pod
 metadata:
   name: service-demo
   #these labels are used to register this pod with service
