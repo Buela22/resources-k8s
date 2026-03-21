@@ -1,4 +1,4 @@
-apiversion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
@@ -16,10 +16,10 @@ spec:
       #pod definition
   template:
     metadata:
-      lables:
+      labels:
         purpose: dp-demo
         project: roboshop
-    specc:
+    spec:
       containers:
       - name: nginx
         image: nginx:latest
