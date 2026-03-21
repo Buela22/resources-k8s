@@ -19,7 +19,7 @@ spec:
       lables:
         purpose: rs-demo
         project: roboshop
-    specc:
+    spec:
       containers:
       - name: nginx
         image: nginx:trixie-perl
